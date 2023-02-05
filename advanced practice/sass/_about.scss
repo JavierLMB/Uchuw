@@ -1,0 +1,144 @@
+@use "base" as *;
+
+.section-about {
+  max-width: 180rem;
+  padding: 5rem 0;
+  height: 85vh;
+  margin-top: 15rem;
+  margin-top: clamp(5vw, calc(10rem + 7vw), 25rem);
+
+  @media only screen and (max-width: $bp-normal) {
+    height: auto;
+  }
+}
+
+.about {
+  display: flex;
+  // align-items: center;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 var(--inner-section-spacing);
+
+  @media only screen and (max-width: $bp-normal) {
+    flex-direction: column-reverse;
+    padding: 0 5vw;
+    gap: 2vw;
+  }
+
+  &__img-container {
+    width: 100%;
+    position: relative;
+    // top: -50rem;
+    @media only screen and (max-width: $bp-normal) {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-normals) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (max-width: $bp-normal) {
+    &__imgs {
+      height: 90rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    &__imgs {
+      height: 60rem;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    display: block;
+    position: absolute;
+    border-left: solid var(--color-primary-light) 0.4rem;
+    border-bottom: solid var(--color-primary-light) 0.4rem;
+    border-radius: 0.2rem;
+
+    &--1 {
+      top: 0rem;
+      left: 0rem;
+    }
+
+    &--2 {
+      top: 15rem;
+      left: 25rem;
+    }
+
+    @media only screen and (max-width: $bp-normal) {
+      width: 50rem;
+      position: relative;
+      margin-bottom: 4rem;
+      &--2 {
+        top: 0rem;
+        left: 0rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-normals) {
+      width: 100%;
+
+      max-height: 100%;
+      object-fit: cover;
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5rem;
+  }
+
+  &__benefits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    @media only screen and (max-width: $bp-normals) {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+
+    & p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+      padding-right: 3rem;
+    }
+  }
+
+  &__benefits {
+    padding: 2rem;
+
+    & svg {
+      width: 5rem;
+      fill: var(--color-tertiary-light);
+      transition: fill 0.5s, transform 0.2s, background-color 0.1s;
+      // border: solid var(--color-primary-light) 0.1rem;
+      background-color: var(--color-secondary-light);
+      padding: 0.8rem;
+      border-radius: 0.2rem;
+
+      &:hover {
+        fill: var(--color-secondary-light);
+        transform: translateY(-0.2rem);
+        background-color: transparent;
+        // border: solid var(--secondary-dark) 0.1rem;
+      }
+    }
+  }
+
+  &__sign {
+    margin-right: auto;
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1rem 4rem !important;
+    }
+  }
+}
