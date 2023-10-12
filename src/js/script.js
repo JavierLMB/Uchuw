@@ -1,21 +1,21 @@
 ///// CAROUSEL
 
-var slideIndex = 0;
-carousel();
+let slideIndex = 0;
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("reviews__box");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  const reviews = document.getElementsByClassName("reviews__box");
+  for (i = 0; i < reviews.length; i++) {
+    reviews[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {
+  if (slideIndex > reviews.length) {
     slideIndex = 1;
   }
-  x[slideIndex - 1].style.display = "block";
-  setTimeout(carousel, 5000); // Change image every 5 seconds
+  reviews[slideIndex - 1].style.display = "block";
+  setTimeout(carousel, 5000);
 }
+
+carousel();
 
 //////////// MOBILE NAVIGATION CLOSE + SCROLL
 
@@ -31,7 +31,7 @@ navLinks.forEach((link) => {
     const targetSection = document.getElementById(targetId);
     const headerHeight = header.offsetHeight;
     const targetRect = targetSection.getBoundingClientRect();
-    const targetPosition = targetRect.top + window.pageYOffset - headerHeight;
+    const targetPosition = targetRect.top + window.scrollY - headerHeight;
     window.scroll({
       top: targetPosition,
       left: 0,
@@ -43,10 +43,10 @@ navLinks.forEach((link) => {
 //////// STICKY NAVIGATION TOP
 
 window.onscroll = function () {
-  var navbar = document.querySelector(".header");
-  var hero = document.querySelector(".hero");
+  const navbar = document.querySelector(".header");
+  const hero = document.querySelector(".hero");
 
-  if (window.pageYOffset >= hero.offsetHeight) {
+  if (window.scrollY >= hero.offsetHeight) {
     navbar.classList.add("fixed");
     navbar.style.marginTop = 0;
   } else {
