@@ -90,7 +90,6 @@
 
         &:hover {
           transform: scale(1.05);
-          // font-size: 5rem;
 
           @media only screen and (max-width: $bp-normal) {
             transform: scale(1);

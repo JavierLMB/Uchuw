@@ -145,10 +145,6 @@
     }
 
     &__background {
-      // background-image: radial-gradient(
-      //   var(--color-primary-light),
-      //   var(--color-primary-dark)
-      // );
       background-color: rgba(52, 60, 85, 0.85);
       backdrop-filter: blur(0.1px);
       height: 6rem;

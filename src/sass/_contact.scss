@@ -98,7 +98,6 @@
       border-radius: 2px;
       border: none;
       background-color: var(--color-white);
-      // Added transparent bottom to makeup for the 3px bounce the focus state border bottom creates
       border-bottom: 3px solid transparent;
       width: 100%;
       display: block;

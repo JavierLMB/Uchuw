@@ -14,7 +14,6 @@
 
 .about {
   display: flex;
-  // align-items: center;
   max-width: 100%;
   position: relative;
   justify-content: center;
@@ -30,7 +29,6 @@
   &__img-container {
     width: 100%;
     position: relative;
-    // top: -50rem;
     @media only screen and (max-width: $bp-normal) {
       display: flex;
       justify-content: center;
@@ -121,7 +119,6 @@
       width: 5rem;
       fill: var(--color-tertiary-light);
       transition: fill 0.5s, transform 0.2s, background-color 0.1s;
-      // border: solid var(--color-primary-light) 0.1rem;
       background-color: var(--color-secondary-light);
       padding: 0.8rem;
       border-radius: 0.2rem;
@@ -130,7 +127,6 @@
         fill: var(--color-secondary-light);
         transform: translateY(-0.2rem);
         background-color: transparent;
-        // border: solid var(--secondary-dark) 0.1rem;
       }
     }
   }

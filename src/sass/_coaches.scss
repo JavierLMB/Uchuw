@@ -42,7 +42,7 @@
     font-weight: 700;
     background-color: #fff;
     text-transform: uppercase;
-    background-image: url(/img/coach\ 1.jpg);
+    background-image: url(/src/img/coach\ 1.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -70,16 +70,16 @@
     }
 
     &:nth-child(2) {
-      background-image: url(/img/coach\ 2.jpg);
+      background-image: url(/src/img/coach\ 2.jpg);
     }
     &:nth-child(3) {
-      background-image: url(/img/coach\ 3.jpg);
+      background-image: url(/src/img/coach\ 3.jpg);
     }
     &:nth-child(4) {
-      background-image: url(/img/coach\ 4.jpg);
+      background-image: url(/src/img/coach\ 4.jpg);
     }
     &:nth-child(5) {
-      background-image: url(/img/coach\ 5.jpg);
+      background-image: url(/src/img/coach\ 5.jpg);
     }
   }
 
