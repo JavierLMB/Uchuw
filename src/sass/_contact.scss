@@ -1,0 +1,172 @@
+@use "base" as *;
+
+.section-contact {
+  max-width: 140rem;
+  padding: 5rem 0;
+  height: auto;
+  margin: 0 auto;
+  margin-top: var(----step-8);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+  padding: 0 4rem;
+
+  @media only screen and (max-width: $bp-normals) {
+    flex-wrap: wrap;
+    flex: 50%;
+    max-width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+  }
+
+  &__options {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & svg {
+    width: 5rem;
+    fill: var(--color-tertiary-light);
+    transition: fill 0.5s, background-color 0.1s;
+    background-color: var(--color-secondary-light);
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+
+    &:hover {
+      fill: var(--color-secondary-light);
+      background-color: transparent;
+    }
+  }
+
+  & p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: -3rem;
+  }
+
+  &__form {
+    background-color: var(--color-primary-light);
+    padding: 7.5rem 3.5rem;
+    border-radius: 0.2rem;
+    box-shadow: var(--shadow-light);
+    border-left: solid var(--color-secondary-light) 0.6rem;
+    border-right: solid var(--color-secondary-light) 0.6rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-normals) {
+      width: 70%;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 85%;
+    }
+    @media only screen and (max-width: $bp-smaller) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    & h2 {
+      color: var(--color-grey-light-1);
+    }
+    &__group:not(:last-child) {
+      margin-bottom: 0.2rem;
+    }
+
+    &__group {
+      & button {
+        width: 100%;
+      }
+    }
+    &__input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      border: none;
+      background-color: var(--color-white);
+      // Added transparent bottom to makeup for the 3px bounce the focus state border bottom creates
+      border-bottom: 3px solid transparent;
+      width: 100%;
+      display: block;
+
+      &:focus {
+        outline: none;
+        box-shadow: var(--shadow-light);
+        border-bottom: 0.5rem solid var(--color-primary-dark);
+
+        &:invalid {
+          border-bottom: 0.5rem solid var(--color-secondary-light);
+        }
+      }
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    &__label {
+      font-size: 1.2rem;
+      font-weight: 700;
+      height: 2.5rem;
+      display: block;
+      transform: translateY(-7rem);
+      transition: all 0.15s ease;
+      color: var(--color-grey-light-2);
+    }
+
+    &__input:placeholder-shown + .form__label {
+      transform: translateY(-3.95rem) translateX(2rem);
+      font-size: 1.5rem;
+      color: var(--color-grey-dark-2);
+      cursor: text;
+      pointer-events: none;
+    }
+
+    &__label-text {
+      font-size: 1.2rem;
+      font-weight: 700;
+      height: 5rem;
+      display: block;
+      transform: translateY(-12.5rem);
+      transition: all 0.15s ease;
+    }
+
+    & textarea {
+      width: 100%;
+      resize: vertical;
+      min-height: 10rem;
+      max-height: 20rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      border: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: var(--shadow-light);
+        border-bottom: 0.5rem solid var(--color-primary-dark);
+
+        &:invalid {
+          border-bottom: 0.5rem solid var(--color-secondary-light);
+        }
+      }
+    }
+  }
+}

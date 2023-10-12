@@ -1,0 +1,107 @@
+@use "base" as *;
+
+.section-coaches {
+  max-width: 180rem;
+  padding: 5rem 0;
+  height: auto;
+  margin-top: var(----step-8);
+}
+
+.coaches {
+  &__titles {
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+
+    background-color: var(--color-tertiary-light);
+    padding: 4rem 0rem;
+    max-width: 185rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-dark);
+    border-bottom: solid var(--color-primary) 0.2rem;
+    border-top: solid var(--color-primary) 0.2rem;
+
+    @media only screen and (max-width: $bp-normals) {
+      max-width: 90rem;
+      box-shadow: none;
+      border: none;
+    }
+  }
+
+  &__img {
+    width: 15rem;
+    height: 60rem;
+    border-radius: 7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #fff;
+    text-transform: uppercase;
+    background-image: url(/img/coach\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: var(--shadow-light);
+    transition: width 0.3s ease-out;
+
+    @media only screen and (max-width: $bp-normals) {
+      width: 40rem;
+    }
+
+    &:hover {
+      width: 45rem;
+    }
+
+    &:hover .coaches__info {
+      opacity: 100%;
+      transition: all 1s ease-in;
+    }
+
+    @media only screen and (max-width: $bp-normals) {
+      .coaches__info {
+        opacity: 100%;
+        transition: all 1s ease-in;
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url(/img/coach\ 2.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(/img/coach\ 3.jpg);
+    }
+    &:nth-child(4) {
+      background-image: url(/img/coach\ 4.jpg);
+    }
+    &:nth-child(5) {
+      background-image: url(/img/coach\ 5.jpg);
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: 4rem;
+    top: 48rem;
+    opacity: 0%;
+    transition: all 0.3s;
+  }
+
+  &__names {
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+  }
+
+  &__style {
+    font-weight: 500;
+    background-color: #fff;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+  }
+}

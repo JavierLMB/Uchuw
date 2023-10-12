@@ -1,0 +1,154 @@
+:root {
+  --color-primary: #252b3d;
+  --color-primary-light: #343c55;
+  --color-primary-dark: #161a25;
+
+  --color-secondary-light: #c52a32;
+  --color-secondary-dark: #861d22;
+
+  --color-tertiary-light: #e3ddd7;
+  --color-tertiary-dark: #c3b6a9;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --default-font-size: 1.6rem;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+
+  ///// SPACING
+  --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+  --space-2xs: clamp(0.56rem, calc(0.55rem + 0.06vw), 0.63rem);
+  --space-xs: clamp(0.88rem, calc(0.86rem + 0.06vw), 0.94rem);
+  --space-s: clamp(1.13rem, calc(1.1rem + 0.13vw), 1.25rem);
+  --space-m: clamp(1.69rem, calc(1.65rem + 0.19vw), 1.88rem);
+  --space-l: clamp(2.25rem, calc(2.2rem + 0.25vw), 2.5rem);
+  --space-xl: clamp(3.38rem, calc(3.3rem + 0.38vw), 3.75rem);
+  --space-2xl: clamp(4.5rem, calc(4.4rem + 0.5vw), 5rem);
+  --space-3xl: clamp(6.75rem, calc(6.6rem + 0.75vw), 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.25rem + 0.31vw), 0.63rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.49rem + 0.38vw), 0.94rem);
+  --space-xs-s: clamp(0.88rem, calc(0.8rem + 0.38vw), 1.25rem);
+  --space-s-m: clamp(1.13rem, calc(0.98rem + 0.75vw), 1.88rem);
+  --space-m-l: clamp(1.69rem, calc(1.53rem + 0.81vw), 2.5rem);
+  --space-l-xl: clamp(2.25rem, calc(1.95rem + 1.5vw), 3.75rem);
+  --space-xl-2xl: clamp(3.38rem, calc(3.05rem + 1.63vw), 5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(3.9rem + 3vw), 7.5rem);
+
+  /* Customs */
+  --inner-section-spacing: clamp(2rem, 6vw, 15rem);
+
+  /// TYPOGRAPHY
+  --step--2: clamp(0.78rem, calc(0.78rem + 0.02vw), 0.8rem);
+  --step--1: clamp(0.94rem, calc(0.93rem + 0.06vw), 1rem);
+  --step-0: clamp(1.13rem, calc(1.1rem + 0.13vw), 1.25rem);
+  --step-1: clamp(1.35rem, calc(1.31rem + 0.21vw), 1.56rem);
+  --step-2: clamp(1.62rem, calc(1.55rem + 0.33vw), 1.95rem);
+  --step-3: clamp(1.94rem, calc(1.84rem + 0.5vw), 2.44rem);
+  --step-4: clamp(2.33rem, calc(2.19rem + 0.72vw), 3.05rem);
+  --step-5: clamp(2.8rem, calc(2.6rem + 1.02vw), 3.82rem);
+  --step-6: clamp(3.36rem, calc(3.08rem + 1.41vw), 4.77rem);
+  --step-7: clamp(4.03rem, calc(3.65rem + 1.93vw), 5.96rem);
+  --step-8: clamp(4.84rem, calc(4.31rem + 2.61vw), 7.45rem);
+}
+
+////// RESPONSIVE BREAKPOINTS
+
+$bp-largest: 111em; // 1776px
+$bp-large: 96em; // 1526px
+$bp-padding: 76em; // 1216px
+$bp-normal: 69em; // 1104px
+$bp-normals: 60em; // 960px
+$bp-small: 45em; // 720px
+$bp-smaller: 33em; // 528px
+$bp-smallest: 23.6em; // 377.6px
+
+//////
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  // scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-normals) {
+    font-size: 45%;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-1);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: var(--space-xl-2xl);
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-padding) {
+    padding: 1.4rem;
+  }
+
+  @media only screen and (max-width: $bp-normals) {
+    padding: 0rem;
+  }
+}
+
+.container {
+  max-width: 180rem;
+  margin: 0rem auto;
+  background-color: var(--color-tertiary-light);
+  box-shadow: var(--shadow-dark);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  min-height: 60rem;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

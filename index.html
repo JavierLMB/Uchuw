@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Martial Arts by Uchuw">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/Logo fav.png">
+
+
+  <title>Uchuw</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+
+      <div class="header__logo">
+        <a href="#">
+          <img class="logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+        </a>
+        <div class="header__logo-name">Uchuw</div>
+      </div>
+
+
+      <nav class="navigation">
+
+
+
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <!-- <div class="navigation__container"> -->
+        <ul class="navigation__list">
+          <li><a class="navigation__items" href="#home">Home</a></li>
+          <li><a class="navigation__items" href="#about">About</a></li>
+          <li><a class="navigation__items" href="#package">Packages</a></li>
+          <li><a class="navigation__items" href="#coaches">Coaches</a></li>
+          <li><a class="navigation__items" href="#reviews">Reviews</a></li>
+          <li><a class="navigation__items" href="#blogs">Blogs</a></li>
+          <li><a class="navigation__items" href="#contact">Contact us</a></li>
+        </ul>
+        <!-- </div> -->
+
+
+
+        <ul class="navigation__social">
+          <li><a class="navigation__sitems" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Logo Facebook</title>
+                <path
+                  d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                  fill-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="navigation__sitems" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Logo Instagram</title>
+                <path
+                  d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                <path
+                  d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="navigation__sitems" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Logo Tiktok</title>
+                <path
+                  d="M412.19 118.66a109.27 109.27 0 01-9.45-5.5 132.87 132.87 0 01-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 01-35.22 55.56 68.8 68.8 0 01-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0121.41 3.39l.1-83.94a153.14 153.14 0 00-118 34.52 161.79 161.79 0 00-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 00115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0027.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z" />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="navigation__sitems" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Logo Twitter</title>
+                <path
+                  d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+      <div class="section-hero" id="home">
+        <div class="hero">
+          <div class="hero__text-box">
+            <div class="hero__heading-primary">
+              <h2 class="hero__heading-primary--sub">Welcome to <span>UCHUW</span></h2>
+              <h1 class="hero__heading-primary--main">You don't get what <span>you want,</span> You get what <span>you
+                  work for.</span></h1>
+            </div>
+            <div class="hero__btns">
+              <a href="#package" class="btn btn--borders">Discover more</a>
+              <a href="#about" class="btn btn--borders">About us</a>
+            </div>
+          </div>
+
+
+          <div class="hero__img-box">
+            <img src="/img/hero img.png" alt="Hero boxer">
+
+            <div class="hero__review-box">
+              <ul>
+                <li><img src="/img/28.jpg" alt="Student review picture"></li>
+                <li><img src="/img/44.jpg" alt="Student review picture"></li>
+                <li><img src="/img/45.jpg" alt="Student review picture"></li>
+                <li><img src="/img/64.jpg" alt="Student review picture"></li>
+                <li><img src="/img/89.jpg" alt="Student review picture"></li>
+              </ul>
+              <p class="">Join over 200+ students</p>
+              <a href="#contact" class="btn btn--borders hero__btn--font">Sign up <span>&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-about" id="about">
+        <div class="about">
+
+          <div class="about__img-container">
+
+            <div class="about__imgs"><img class="about__img about__img--1" src="/img/about image1.jpg" alt="Karate">
+            </div>
+            <div class="about__imgs"><img class="about__img about__img--2" src="/img/about image2.jpg"
+                alt="Kickboxing fight"></div>
+          </div>
+          <div class="about__text-container">
+            <div class="about__title">
+              <h3 class="heading-3 ml-sm">About Uchuw</h3>
+              <h2 class="heading-2 heading-2--secondary">Unleashing the fighter in you</h2>
+            </div>
+
+            <div class="about__benefits-container">
+
+              <div class="about__benefits">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon mb-xsm" viewBox="0 0 512 512">
+                  <title>People</title>
+                  <path
+                    d="M336 256c-20.56 0-40.44-9.18-56-25.84-15.13-16.25-24.37-37.92-26-61-1.74-24.62 5.77-47.26 21.14-63.76S312 80 336 80c23.83 0 45.38 9.06 60.7 25.52 15.47 16.62 23 39.22 21.26 63.63-1.67 23.11-10.9 44.77-26 61C376.44 246.82 356.57 256 336 256zm66-88zM467.83 432H204.18a27.71 27.71 0 01-22-10.67 30.22 30.22 0 01-5.26-25.79c8.42-33.81 29.28-61.85 60.32-81.08C264.79 297.4 299.86 288 336 288c36.85 0 71 9 98.71 26.05 31.11 19.13 52 47.33 60.38 81.55a30.27 30.27 0 01-5.32 25.78A27.68 27.68 0 01467.83 432zM147 260c-35.19 0-66.13-32.72-69-72.93-1.42-20.6 5-39.65 18-53.62 12.86-13.83 31-21.45 51-21.45s38 7.66 50.93 21.57c13.1 14.08 19.5 33.09 18 53.52-2.87 40.2-33.8 72.91-68.93 72.91zM212.66 291.45c-17.59-8.6-40.42-12.9-65.65-12.9-29.46 0-58.07 7.68-80.57 21.62-25.51 15.83-42.67 38.88-49.6 66.71a27.39 27.39 0 004.79 23.36A25.32 25.32 0 0041.72 400h111a8 8 0 007.87-6.57c.11-.63.25-1.26.41-1.88 8.48-34.06 28.35-62.84 57.71-83.82a8 8 0 00-.63-13.39c-1.57-.92-3.37-1.89-5.42-2.89z" />
+                </svg>
+                <h4 class="heading-4 heading-4--light">Tight-knit community</h4>
+                <p>We strive to make Uchuw feel like a second home for our members.</p>
+              </div>
+
+              <div class="about__benefits">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon mb-xsm" viewBox="0 0 512 512">
+                  <title>Ribbon</title>
+                  <path
+                    d="M269 335.61q-6.33.47-12.78.47c-5.23 0-10.4-.24-15.51-.69a176.11 176.11 0 01-127.67-72.94 4 4 0 00-6.77.35l-72 129.4c-2.74 5-3.17 11-.28 15.88A16.78 16.78 0 0048.22 416h78a15.28 15.28 0 0113.62 7.33L178.5 488a16.26 16.26 0 0013.75 8c5.94-.33 12.09-4.19 14.56-9.6l66.11-145.15a4 4 0 00-3.92-5.64zM477.64 391.88l-71.53-129.17a4 4 0 00-6.74-.36 176.5 176.5 0 01-78.31 61.42 16.09 16.09 0 00-8.72 8.25l-36.86 81.1a7.92 7.92 0 000 6.6l30.27 66.59c2.45 5.41 8.59 9.36 14.52 9.69a16.3 16.3 0 0013.7-8.12l38.53-64.58c2.89-4.85 8.13-7.33 13.78-7.3h78.77c6.67 0 11.72-3.48 14-10a16.92 16.92 0 00-1.41-14.12z" />
+                  <ellipse cx="256.26" cy="160" rx="48.01" ry="48" />
+                  <path
+                    d="M256.26 16c-79.42 0-144 64.59-144 144s64.61 144 144 144 144-64.6 144-144-64.59-144-144-144zm0 224a80 80 0 1180-80 80.1 80.1 0 01-80 80z" />
+                </svg>
+                <h4 class="heading-4 heading-4--light">Expert Trainers</h4>
+                <p>All of our trainers are highly experienced and have undergone rigorous international training.</p>
+              </div>
+
+              <div class="about__benefits">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon mb-xsm" viewBox="0 0 512 512">
+                  <title>Map</title>
+                  <path
+                    d="M48.17 113.34A32 32 0 0032 141.24V438a32 32 0 0047 28.37c.43-.23.85-.47 1.26-.74l84.14-55.05a8 8 0 003.63-6.72V46.45a8 8 0 00-12.51-6.63zM212.36 39.31A8 8 0 00200 46v357.56a8 8 0 003.63 6.72l96 62.42A8 8 0 00312 466V108.67a8 8 0 00-3.64-6.73zM464.53 46.47a31.64 31.64 0 00-31.5-.88 12.07 12.07 0 00-1.25.74l-84.15 55a8 8 0 00-3.63 6.72v357.46a8 8 0 0012.52 6.63l107.07-73.46a32 32 0 0016.41-28v-296a32.76 32.76 0 00-15.47-28.21z" />
+                </svg>
+                <h4 class="heading-4 heading-4--light">Centrally Located</h4>
+                <p>A state-of-the-art finish and well-equipped gym in the heart of Birkirkara.</p>
+              </div>
+
+              <div class="about__benefits">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon mb-xsm" viewBox="0 0 512 512">
+                  <title>Trophy</title>
+                  <path
+                    d="M464 80h-60.1a4 4 0 01-4-4V63.92a32 32 0 00-32-31.92l-223.79.26a32 32 0 00-31.94 31.93V76a4 4 0 01-4 4H48a16 16 0 00-16 16v16c0 54.53 30 112.45 76.52 125.35a7.82 7.82 0 015.55 5.9c5.77 26.89 23.52 52.5 51.41 73.61 20.91 15.83 45.85 27.5 68.27 32.48a8 8 0 016.25 7.8V444a4 4 0 01-4 4h-59.55c-8.61 0-16 6.62-16.43 15.23A16 16 0 00176 480h159.55c8.61 0 16-6.62 16.43-15.23A16 16 0 00336 448h-60a4 4 0 01-4-4v-86.86a8 8 0 016.25-7.8c22.42-5 47.36-16.65 68.27-32.48 27.89-21.11 45.64-46.72 51.41-73.61a7.82 7.82 0 015.55-5.9C450 224.45 480 166.53 480 112V96a16 16 0 00-16-16zM112 198.22a4 4 0 01-6 3.45c-10.26-6.11-17.75-15.37-22.14-21.89-11.91-17.69-19-40.67-19.79-63.63a4 4 0 014-4.15h40a4 4 0 014 4c-.02 27.45-.07 58.87-.07 82.22zm316.13-18.44c-4.39 6.52-11.87 15.78-22.13 21.89a4 4 0 01-6-3.46c0-26.51 0-56.63-.05-82.21a4 4 0 014-4h40a4 4 0 014 4.15c-.79 22.96-7.9 45.94-19.81 63.63z" />
+                </svg>
+                <h4 class="heading-4 heading-4--light ">Special Events</h4>
+                <p>Join us for special events featuring demonstrations, workshops, and friendly competition for all
+                  levels.</p>
+              </div>
+            </div>
+            <a href="#" class="about__sign btn btn--borders">Sign up <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-packages" id="package">
+        <div class="packages">
+          <div class="packages__titles mb-hg">
+            <h3 class="heading-3 mb-xsm">Choose a package</h3>
+            <h2 class="heading-2 heading-2--secondary">Your Path to Mastery</h2>
+          </div>
+          <div class="packages__container">
+            <div class="packages__package">
+              <h4 class="heading-4 packages__package-name">Novice</h4>
+              <div class="packages__package-price">$25<span>/mo</span></div>
+              <div class="packages__package-features">
+                <div class="packages__package-feature">4 sessions</div>
+                <div class="packages__package-feature">Personal facitilies</div>
+                <div class="packages__package-feature">Weekly event</div>
+                <div class="packages__package-feature">Access to our gym</div>
+              </div>
+              <a href="#" class="packages__buy btn btn--borders">Buy</a>
+            </div>
+            <div class="packages__package">
+              <h4 class="heading-4 packages__package-name">Gladiator</h4>
+              <div class="packages__package-price">$35<span>/mo</span></div>
+              <div class="packages__package-features">
+                <div class="packages__package-feature">6 sessions</div>
+                <div class="packages__package-feature">Personal facitilies</div>
+                <div class="packages__package-feature">Weekly event</div>
+                <div class="packages__package-feature">Access to our gym</div>
+              </div>
+              <a href="#" class="packages__buy btn btn--borders">Buy</a>
+            </div>
+            <div class="packages__package packages__package--active">
+              <div class="packages__package-value">Best Value!</div>
+              <h4 class="heading-4 packages__package-name">Warrior</h4>
+              <div class="packages__package-price">$50<span>/mo</span></div>
+              <div class="packages__package-features">
+                <div class="packages__package-feature">10 sessions</div>
+                <div class="packages__package-feature">Personal facitilies</div>
+                <div class="packages__package-feature">Weekly event</div>
+                <div class="packages__package-feature">Access to our gym</div>
+              </div>
+              <a href="#" class="packages__buy btn btn--borders">Buy</a>
+            </div>
+            <div class="packages__package">
+              <h4 class="heading-4 packages__package-name">Beast</h4>
+              <div class="packages__package-price">$85<span>/mo</span></div>
+              <div class="packages__package-features">
+                <div class="packages__package-feature">Unlimited sessions</div>
+                <div class="packages__package-feature">Personal facitilies</div>
+                <div class="packages__package-feature">Weekly event</div>
+                <div class="packages__package-feature">Access to our gym</div>
+              </div>
+              <a href="#" class="packages__buy btn btn--borders">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="packages__video">
+          <video controls autoplay loop playsinline>
+            <source src="/img/Boxing vid.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="section-coaches">
+
+        <div class="coaches">
+          <div class="coaches__titles mb-hg" id="coaches">
+            <h3 class="heading-3 mb-xsm">Our team</h3>
+            <h2 class="heading-2 heading-2--secondary">Meet the coaches</h2>
+          </div>
+          <div class="coaches__container">
+            <div class="coaches__img">
+              <div class="coaches__info">
+                <div class="coaches__names">Carlos</div>
+                <div class="coaches__style">Kickboxing</div>
+              </div>
+            </div>
+            <div class="coaches__img">
+              <div class="coaches__info">
+                <div class="coaches__names">Loren</div>
+                <div class="coaches__style">Karate</div>
+              </div>
+            </div>
+            <div class="coaches__img">
+              <div class="coaches__info">
+                <div class="coaches__names">Fred</div>
+                <div class="coaches__style">Muay Thai</div>
+              </div>
+            </div>
+            <div class="coaches__img">
+              <div class="coaches__info">
+                <div class="coaches__names">Kim</div>
+                <div class="coaches__style">Boxing</div>
+              </div>
+            </div>
+            <div class="coaches__img">
+              <div class="coaches__info">
+                <div class="coaches__names">Ben</div>
+                <div class="coaches__style">BJJ</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="section-reviews" id="reviews">
+
+    <div class="reviews">
+      <div class="reviews__left">&nbsp;</div>
+      <div class="reviews__right">
+        <div class="reviews__titles mb-hg">
+          <h3 class="heading-3 mb-xsm ml-sm reviews__heading">Reviews</h3>
+          <h2 class="heading-2 reviews__heading">Customer feedback</h2>
+        </div>
+
+        <div class="reviews__box reviews__slide ml-sm">
+          <div class="reviews__comment mb-sm">"Uchuw is a great place to train with skilled instructors who make
+            learning enjoyable."
+          </div>
+          <div class="reviews__bottom">
+            <div class="reviews__personal-container">
+              <div class="reviews__person">
+                <img src="/img/2.jpg" alt="Customer Picture">
+              </div>
+              <div class="reviews__ratings">
+                <div class="reviews__name">
+                  Michael Lee
+                </div>
+                <div class="reviews__stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__logo-box">
+              <img class="reviews__logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__box reviews__slide ml-sm">
+          <div class="reviews__comment mb-sm">"The atmosphere at Uchuw is welcoming and supportive, making it a perfect
+            place to start or continue your martial arts journey."
+          </div>
+          <div class="reviews__bottom">
+            <div class="reviews__personal-container">
+              <div class="reviews__person">
+                <img src="/img/11.jpg" alt="Customer Picture">
+              </div>
+              <div class="reviews__ratings">
+                <div class="reviews__name">
+                  Jessica Brown
+                </div>
+                <div class="reviews__stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__logo-box">
+              <img class="reviews__logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__box reviews__slide ml-sm">
+          <div class="reviews__comment mb-sm">"The classes at Uchuw are well-structured and challenging, providing a
+            great workout while teaching valuable skills."
+          </div>
+          <div class="reviews__bottom">
+            <div class="reviews__personal-container">
+              <div class="reviews__person">
+                <img src="/img/6.jpg" alt="Customer Picture">
+              </div>
+              <div class="reviews__ratings">
+                <div class="reviews__name">
+                  David Smith
+                </div>
+                <div class="reviews__stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__logo-box">
+              <img class="reviews__logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__box reviews__slide ml-sm">
+          <div class="reviews__comment mb-sm">"I've seen significant improvement in my martial arts abilities since
+            joining Uchuw, thanks to the knowledgeable instructors."
+          </div>
+          <div class="reviews__bottom">
+            <div class="reviews__personal-container">
+              <div class="reviews__person">
+                <img src="/img/55.jpg" alt="Customer Picture">
+              </div>
+              <div class="reviews__ratings">
+                <div class="reviews__name">
+                  Emily Davis
+                </div>
+                <div class="reviews__stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__logo-box">
+              <img class="reviews__logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__box reviews__slide ml-sm">
+          <div class="reviews__comment mb-sm">"Uchuw is not only a place to learn martial arts, but a community where
+            you can make new friends and have fun."
+          </div>
+          <div class="reviews__bottom">
+            <div class="reviews__personal-container">
+              <div class="reviews__person">
+                <img src="/img/32.jpg" alt="Customer Picture">
+              </div>
+              <div class="reviews__ratings">
+                <div class="reviews__name">
+                  John Doe
+                </div>
+                <div class="reviews__stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                    <title>Star</title>
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__logo-box">
+              <img class="reviews__logo" src="/img/Uchuw logo.png" alt="Uchuw logo">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-blogs" id="blogs">
+      <div class="blogs">
+        <div class="blogs__titles mb-hg">
+          <h3 class="heading-3 mb-xsm">Blogs</h3>
+          <h2 class="heading-2 heading-2--secondary">Martial art news</h2>
+        </div>
+        <div class="blogs__container">
+
+          <div class="blogs__post">
+            <div class="blogs__img">
+              <img src="/img/blog1.jpg" alt="blog img">
+            </div>
+            <h4 class="heading-4 heading-4--dark">Sparring etiquette</h4>
+            <p>Sparring etiquette refers to the rules that are followed in martial arts training during sparring
+              sessions. These guidelines ensure the individual’s safety and keep a respectful environment where both
+              partners can safely practice their martial art.
+            </p>
+            <a href="#" class="blogs__btn">Read more</a>
+          </div>
+
+          <div class="blogs__post">
+            <div class="blogs__img">
+              <img src="/img/blog2.jpg" alt="blog img">
+            </div>
+            <h4 class="heading-4 heading-3--dark">How to keep balance</h4>
+            <p>One of the key elements to a good fighter is balance. Balance is achieved through a combination of proper
+              posture, weight distribution, and body awareness. Keep reading if you would like to improve your balance.
+            </p>
+            <a href="#" class="blogs__btn">Read more</a>
+          </div>
+
+          <div class="blogs__post">
+            <div class="blogs__img">
+              <img src="/img/blog3.jpg" alt="blog img">
+            </div>
+            <h4 class="heading-4 heading-4--dark">The art of rolling</h4>
+            <p>Sparring in Brazilian Jiu-Jitsu (BJJ) is a crucial part of training, where practitioners simulate live
+              grappling situations to develop their skills and test their techniques against a resisting opponent. This
+              helps practitioners improve their physical fitness and reaction time.
+            </p>
+            <a href="#" class="blogs__btn">Read more</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-contact" id="contact">
+      <div class="contact">
+        <div class="contact__info">
+          <div class="contact__titles">
+            <h3 class="heading-3">Contact us</h3>
+            <h2 class="heading-2 heading-2--secondary">For any further info</h2>
+          </div>
+          <div class="contact__options">
+            <div class="contact__chat contact__option">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Chatbubble Ellipses</title>
+                <path
+                  d="M398 81.84A227.4 227.4 0 00255.82 32C194.9 32 138 55.47 95.46 98.09 54.35 139.33 31.82 193.78 32 251.37a215.66 215.66 0 0035.65 118.76l.19.27c.28.41.57.82.86 1.22s.65.92.73 1.05l.22.4c1.13 2 2 4.44 1.23 6.9l-18.42 66.66a29.13 29.13 0 00-1.2 7.63A25.69 25.69 0 0076.83 480a29.44 29.44 0 0010.45-2.29l67.49-24.36.85-.33a14.75 14.75 0 015.8-1.15 15.12 15.12 0 015.37 1c1.62.63 16.33 6.26 31.85 10.6 12.9 3.6 39.74 9 60.77 9 59.65 0 115.35-23.1 156.83-65.06C457.36 365.77 480 310.42 480 251.49a213.5 213.5 0 00-4.78-45c-10.34-48.62-37.76-92.9-77.22-124.65zM87.48 380zM160 288a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32zm96 0a32 32 0 1132-32 32 32 0 01-32 32z" />
+              </svg>
+              <h4 class="heading-4">Live chat</h4>
+            </div>
+            <div class="contact__phone contact__option">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <title>Call</title>
+                <path
+                  d="M391 480c-19.52 0-46.94-7.06-88-30-49.93-28-88.55-53.85-138.21-103.38C116.91 298.77 93.61 267.79 61 208.45c-36.84-67-30.56-102.12-23.54-117.13C45.82 73.38 58.16 62.65 74.11 52a176.3 176.3 0 0128.64-15.2c1-.43 1.93-.84 2.76-1.21 4.95-2.23 12.45-5.6 21.95-2 6.34 2.38 12 7.25 20.86 16 18.17 17.92 43 57.83 52.16 77.43 6.15 13.21 10.22 21.93 10.23 31.71 0 11.45-5.76 20.28-12.75 29.81-1.31 1.79-2.61 3.5-3.87 5.16-7.61 10-9.28 12.89-8.18 18.05 2.23 10.37 18.86 41.24 46.19 68.51s57.31 42.85 67.72 45.07c5.38 1.15 8.33-.59 18.65-8.47 1.48-1.13 3-2.3 4.59-3.47 10.66-7.93 19.08-13.54 30.26-13.54h.06c9.73 0 18.06 4.22 31.86 11.18 18 9.08 59.11 33.59 77.14 51.78 8.77 8.84 13.66 14.48 16.05 20.81 3.6 9.53.21 17-2 22-.37.83-.78 1.74-1.21 2.75a176.49 176.49 0 01-15.29 28.58c-10.63 15.9-21.4 28.21-39.38 36.58A67.42 67.42 0 01391 480z" />
+              </svg>
+              <h4 class="heading-4">Call us</h4>
+            </div>
+          </div>
+          <p>Don’t let your worries or doubts get in the way of your martial art journey. We are here to answer all of
+            your queries and support you along the way.
+          </p>
+        </div>
+        <div class="contact__form">
+
+          <form name="contact" netlify class="form">
+            <div class="mb-lg">
+              <h2 class="heading-2">
+                book now!
+              </h2>
+            </div>
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+              <label for="name" class="form__label" name="name">Name</label>
+            </div>
+
+            <div class="form__group">
+              <input type="email" class="form__input" placeholder="Email address" id="email" required>
+              <label for="email" class="form__label" name="Email">Email</label>
+            </div>
+
+            <div class="form__group">
+              <input type="tel" class="form__input" placeholder="Phone" id="phone" required>
+              <label for="phone" class="form__label" name="Phone">Phone</label>
+            </div>
+
+            <div class="form__group">
+              <textarea id="text-box" name="text" placeholder="Additional comments"></textarea>
+              <label for="text-box" class="form__label-text" name="Additional comments">&nbsp;</label>
+            </div>
+
+
+            <div class="form__group">
+              <button class="btn btn--borders">Next step &rarr;</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="section-footer">
+      <div class="footer">
+        <div class="footer__img">
+          <div class="footer__container">
+            <div class="footer__titles mb-md">
+              <h3 class="heading-3 mb-xsm heading-3--light">Join us</h3>
+              <h2 class="heading-2 heading-2--light">Be the best you can be</h2>
+            </div>
+            <p class="mb-md">Transform your life with Uchuw martial arts training.</p>
+            <div class="footer__btns">
+              <a href="#" class="btn footer__btn">Read more</a>
+              <a href="#contact" class="btn footer__btn">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__info">
+          <div class="footer__info-container">
+            <div class="footer__about ">
+              <p class="mb-sm"> Start your martial arts journey with Uchuw and reach new levels of mastery. Our expert
+                instructors and comprehensive training programs will help you achieve your goals. Enroll today.
+              </p>
+
+              <ul class="footer__social">
+                <li><a class="footer__sitems" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                      <title>Logo Facebook</title>
+                      <path
+                        d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                        fill-rule="evenodd" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="footer__sitems" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                      <title>Logo Instagram</title>
+                      <path
+                        d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                      <path
+                        d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="footer__sitems" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                      <title>Logo Tiktok</title>
+                      <path
+                        d="M412.19 118.66a109.27 109.27 0 01-9.45-5.5 132.87 132.87 0 01-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14 23.9 350 16 350.13 16h-82.44v318.78c0 4.28 0 8.51-.18 12.69 0 .52-.05 1-.08 1.56 0 .23 0 .47-.05.71v.18a70 70 0 01-35.22 55.56 68.8 68.8 0 01-34.11 9c-38.41 0-69.54-31.32-69.54-70s31.13-70 69.54-70a68.9 68.9 0 0121.41 3.39l.1-83.94a153.14 153.14 0 00-118 34.52 161.79 161.79 0 00-35.3 43.53c-3.48 6-16.61 30.11-18.2 69.24-1 22.21 5.67 45.22 8.85 54.73v.2c2 5.6 9.75 24.71 22.38 40.82A167.53 167.53 0 00115 470.66v-.2l.2.2c39.91 27.12 84.16 25.34 84.16 25.34 7.66-.31 33.32 0 62.46-13.81 32.32-15.31 50.72-38.12 50.72-38.12a158.46 158.46 0 0027.64-45.93c7.46-19.61 9.95-43.13 9.95-52.53V176.49c1 .6 14.32 9.41 14.32 9.41s19.19 12.3 49.13 20.31c21.48 5.7 50.42 6.9 50.42 6.9v-81.84c-10.14 1.1-30.73-2.1-51.81-12.61z" />
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="footer__sitems" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                      <title>Logo Twitter</title>
+                      <path
+                        d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="footer__cta">
+              <h5>Get in touch</h5>
+              <div class="footer__cta-info">
+                <div class="footer__address">32 Cornwall Street, Birkirkara</div>
+                <div class="footer__email">business@uchuw.com</div>
+                <div class="footer__contact-no">(+356) 99572211</div>
+              </div>
+            </div>
+
+            <div class="footer__quicklinks">
+              <h5> Quicklinks</h5>
+              <div class="footer__quicklinks-nav">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#packages">Packages</a></li>
+                  <li><a href="#coaches">Coaches</a></li>
+                  <li><a href="#reviews">Reviews</a></li>
+                  <li><a href="#blogs">Blogs</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__openning-times">
+              <h5>Open Hours</h5>
+              <div class="footer__openning-sections">
+                <div class="footer__openning-days">Monday - Friday</div>
+                <div class="footer__openning-hours">07:00 - 23:00</div>
+                <div class="footer__openning-days">Saturday - Sunday</div>
+                <div class="footer__openning-hours">08:00 - 22:00</div>
+                <div class="footer__openning-days"> Public Holidays</div>
+                <div class="footer__openning-hours">07:00 - 13:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-section">
+              Copyright &copy; <span class="year">2023</span>
+            </div>
+            <div class="footer__copyright-right">
+              <p>Privacy Policy</p>
+              <p>Terms & services </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
+
+
+</html>
